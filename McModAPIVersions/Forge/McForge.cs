@@ -126,6 +126,36 @@ namespace McModAPIVersions
         }
 
         /// <summary>
+        /// Return download link to the targetted Minecraft Forge MDK 
+        /// </summary>
+        /// <param name="mcVersion">Minecraft version</param>
+        /// <param name="forgeVersion">Minecraft Forge version</param>
+        /// <example>To download Minecraft Forge MDK version 35.1.37 for Minecraft 1.16.4, calling the function like this : <code>GetMDKDownloadLink("1.16.4", "35.1.37");</code></example>
+        /// <returns>Download link to the targetted Minecraft Forge MDK</returns>
+        /// <exception cref="VersionNotFoundException">Thrown when no download link has been found</exception>
+        public static string GetMDKDownloadLink(string mcVersion, string forgeVersion)
+        {
+            // Build the mdk download link 
+            string link = string.Format("https://files.minecraftforge.net/maven/net/minecraftforge/forge/" + mcVersion + "-" + forgeVersion + "/forge-" + mcVersion + "-" + forgeVersion + "-mdk.zip");
+
+            // Check if url is a correct download link
+            WebRequest request = WebRequest.Create(new Uri(link));
+            WebResponse response;
+            request.Timeout = 7000;
+
+            try
+            {
+                response = request.GetResponse();
+            }
+            catch (Exception)
+            {
+                throw new VersionNotFoundException(string.Format("MDK Download link for forge {0} unreachable.", forgeVersion));
+            }
+
+            return link;
+        }
+
+        /// <summary>
         /// Retrieve remote JSON with promoted Forge versions
         /// </summary>
         private static bool RetrieveRemotePromotionsJson()

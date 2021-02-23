@@ -5,6 +5,14 @@
     <Authors>JeremTech</Authors>
     <Description>Allow to retrieve last Minecraft Forge and Fabric versions infos.</Description>
     <PackageTags>Minecraft, API, Versions, Forge, Fabric, Mod</PackageTags>
+    <PackageProjectUrl>https://github.com/JeremTech/McModAPIVersions</PackageProjectUrl>
+    <Version>1.1.0</Version>
+    <PackageReleaseNotes>1.1.0 :
+-</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\C#\Libs\McModAPIVersions\McModAPIVersions\McModAPIVersions\McModAPIVersions.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>McModAPIVersions</name>
+    </assembly>
+    <members>
+        <member name="T:McModAPIVersions.Fabric.FabricGameVersionsEntryJson">
+            <summary>
+            Representing one Minecraft versions supported by fabric in JSON
+            </summary>
+        </member>
+        <member name="T:McModAPIVersions.Fabric.McFabric">
+            <summary>
+            Get Minecraft Fabric versions
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.Fabric.McFabric.Json_game_version_url">
+            <summary>
+            URL to Fabric's supported Minecraft versions JSON
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.Fabric.McFabric.JsonGameLoaderInfoBaseUrl">
+            <summary>
+            Base URL to loader infos JSON
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.Fabric.McFabric.FabricGameVersionsJsonObject">
+            <summary>
+            Fabric's supported Minecraft versions JSON object
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.Fabric.McFabric.FabricLoaderInfoObject">
+            <summary>
+            Fabric's supported Minecraft versions JSON object
+            </summary>
+        </member>
+        <member name="M:McModAPIVersions.Fabric.McFabric.GetAllSupportedVersions">
+            <summary>
+            Get all Minecraft versions supported by Fabric
+            </summary>
+            <returns>All Minecraft versions supported by Fabric</returns>
+        </member>
+        <member name="M:McModAPIVersions.Fabric.McFabric.GetAllSupportedStableVersions">
+            <summary>
+            Get all stable Minecraft versions supported by Fabric
+            </summary>
+            <returns>All stable Minecraft versions supported by Fabric</returns>
+        </member>
+        <member name="M:McModAPIVersions.Fabric.McFabric.GetLastStableLoaderInfos(System.String)">
+            <summary>
+            Get last stable Fabric loader infos
+            </summary>
+            <param name="mcVersion">Minecraft version</param>
+            <returns>Object with loader and mappings infos</returns>
+            <exception cref="T:McModAPIVersions.VersionNotFoundException">Thown when Fabric has no version for Minecraft <paramref name="mcVersion"/></exception>
+        </member>
+        <member name="M:McModAPIVersions.Fabric.McFabric.RetrieveRemoteLoaderInfoJson(System.String)">
+            <summary>
+            Retrieve remote JSON with infos about Fabric loader for a specific Minecraft version
+            </summary>
+        </member>
+        <member name="M:McModAPIVersions.Fabric.McFabric.RetrieveRemoteLoaderInfoJsonFunction(System.String)">
+            <summary>
+            Function thread retrieve remote JSON with infos about Fabric loader for a specific Minecraft version
+            </summary>
+        </member>
+        <member name="M:McModAPIVersions.Fabric.McFabric.RetrieveRemoteSupportedVersionsJson">
+            <summary>
+            Retrieve remote JSON with supported Minecraft versions by Fabric
+            </summary>
+        </member>
+        <member name="M:McModAPIVersions.Fabric.McFabric.RetrieveRemoteSupportedVersionsJsonFunction">
+            <summary>
+            Function thread retrieve remote JSON with supported Minecraft versions by Fabric
+            </summary>
+        </member>
+        <member name="T:McModAPIVersions.ForgePromotionsJson">
+            <summary>
+            Representing Forge versions JSON file
+            </summary>
+        </member>
+        <member name="M:McModAPIVersions.ForgePromotionsJson.GetLatestVersion(System.String)">
+            <summary>
+            Get the latest version of forge for a specific Minecraft version
+            </summary>
+            <param name="mcVersion">Minecraft version</param>
+            <returns>Latest Forge version for <paramref name="mcVersion"/> Minecraft version</returns>
+            <exception cref="T:McModAPIVersions.VersionNotFoundException">Thrown when no latest version has been found</exception>
+        </member>
+        <member name="M:McModAPIVersions.ForgePromotionsJson.GetRecommendedVersion(System.String)">
+            <summary>
+            Get the recommended version of forge for a specific Minecraft version
+            </summary>
+            <param name="mcVersion">Minecraft version</param>
+            <returns>Recommended Forge version for <paramref name="mcVersion"/> Minecraft version</returns>
+            <exception cref="T:McModAPIVersions.VersionNotFoundException">Thrown when no recommended version has been found</exception>
+        </member>
+        <member name="T:McModAPIVersions.Forge.ForgeVersionsJson">
+            <summary>
+            Representing maven-metadata.json file.
+            Retrieve Minecraft Forge's version only for Minecraft 1.13 and above.
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.Forge.ForgeVersionsJson.v1165">
+            <summary>
+            List of Minecraft Forge's versions for Minecraft 1.16.5
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.Forge.ForgeVersionsJson.v1164">
+            <summary>
+            List of Minecraft Forge's versions for Minecraft 1.16.4
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.Forge.ForgeVersionsJson.v1163">
+            <summary>
+            List of Minecraft Forge's versions for Minecraft 1.16.3
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.Forge.ForgeVersionsJson.v1162">
+            <summary>
+            List of Minecraft Forge's versions for Minecraft 1.16.2
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.Forge.ForgeVersionsJson.v1161">
+            <summary>
+            List of Minecraft Forge's versions for Minecraft 1.16.1
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.Forge.ForgeVersionsJson.v1152">
+            <summary>
+            List of Minecraft Forge's versions for Minecraft 1.15.2
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.Forge.ForgeVersionsJson.v1151">
+            <summary>
+            List of Minecraft Forge's versions for Minecraft 1.15.1
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.Forge.ForgeVersionsJson.v115">
+            <summary>
+            List of Minecraft Forge's versions for Minecraft 1.15
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.Forge.ForgeVersionsJson.v1144">
+            <summary>
+            List of Minecraft Forge's versions for Minecraft 1.14.4
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.Forge.ForgeVersionsJson.v1143">
+            <summary>
+            List of Minecraft Forge's versions for Minecraft 1.14.3
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.Forge.ForgeVersionsJson.v1142">
+            <summary>
+            List of Minecraft Forge's versions for Minecraft 1.14.2
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.Forge.ForgeVersionsJson.v1132">
+            <summary>
+            List of Minecraft Forge's versions for Minecraft 1.13.2
+            </summary>
+        </member>
+        <member name="M:McModAPIVersions.Forge.ForgeVersionsJson.GetForgeVersions(System.String)">
+            <summary>
+            Get all available Minecraft Forge versions for Minecraft <paramref name="mcVersion"/>
+            </summary>
+            <param name="mcVersion">Minecraft version</param>
+            <returns>All available Minecraft Forge versions for Minecraft <paramref name="mcVersion"/></returns>
+            <exception cref="T:McModAPIVersions.VersionNotFoundException">Thrown when no versions have been found</exception>
+        </member>
+        <member name="T:McModAPIVersions.McForge">
+            <summary>
+            Get Minecraft Forge versions
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.McForge.Promotions_url">
+            <summary>
+            URL to Forge's promoted versions JSON
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.McForge.Versions_url">
+            <summary>
+            URL to Forge's versions JSON
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.McForge.ForgePromotionsJsonObject">
+            <summary>
+            Forge's promoted versions JSON object
+            </summary>
+        </member>
+        <member name="F:McModAPIVersions.McForge.ForgeVersionsJsonObject">
+            <summary>
+            Forge's versions JSON object
+            </summary>
+        </member>
+        <member name="M:McModAPIVersions.McForge.GetLatestVersion(System.String)">
+            <summary>
+            Get the latest version of forge for a specific Minecraft version
+            </summary>
+            <param name="mcVersion">Minecraft version</param>
+            <returns>Latest Forge version for <paramref name="mcVersion"/> Minecraft version</returns>
+            <exception cref="T:System.Exception">Thrown when remote informations can't be gathered</exception>
+            <exception cref="T:McModAPIVersions.VersionNotFoundException">Thrown when no latest version has been found</exception>
+        </member>
+        <member name="M:McModAPIVersions.McForge.GetRecommendedVersion(System.String)">
+            <summary>
+            Get the recommended version of forge for a specific Minecraft version
+            </summary>
+            <param name="mcVersion">Minecraft version</param>
+            <returns>Recommended Forge version for <paramref name="mcVersion"/> Minecraft version</returns>
+            <exception cref="T:System.Exception">Thrown when remote informations can't be gathered</exception>
+            <exception cref="T:McModAPIVersions.VersionNotFoundException">Thrown when no recommended version has been found</exception>
+        </member>
+        <member name="M:McModAPIVersions.McForge.GetAvailableVersions(System.String)">
+            <summary>
+            Get all available versions of forge for a specific Minecraft version
+            </summary>
+            <param name="mcVersion">Minecraft version</param>
+            <returns>All available Forge versions for <paramref name="mcVersion"/> Minecraft version</returns>
+            <exception cref="T:System.Exception">Thrown when remote informations can't be gathered</exception>
+            <exception cref="T:McModAPIVersions.VersionNotFoundException">Thrown when no available versions have been found</exception>
+        </member>
+        <member name="M:McModAPIVersions.McForge.GetMDKDownloadLink(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="forgeVersion"></param>
+            <returns></returns>
+        </member>
+        <member name="M:McModAPIVersions.McForge.RetrieveRemotePromotionsJson">
+            <summary>
+            Retrieve remote JSON with promoted Forge versions
+            </summary>
+        </member>
+        <member name="M:McModAPIVersions.McForge.RetrieveRemotePromotionsJsonFunction">
+            <summary>
+            Function thread retrieve remote JSON with promoted Forge versions
+            </summary>
+        </member>
+        <member name="M:McModAPIVersions.McForge.RetrieveRemoteVersionsJson">
+            <summary>
+            Retrieve remote JSON with Forge versions
+            </summary>
+        </member>
+        <member name="M:McModAPIVersions.McForge.RetrieveRemoteVersionsJsonFunction">
+            <summary>
+            Function thread retrieve remote JSON with promoted Forge versions
+            </summary>
+        </member>
+    </members>
+</doc>
