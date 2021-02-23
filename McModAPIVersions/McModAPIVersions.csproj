@@ -3,12 +3,15 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>JeremTech</Authors>
-    <Description>Allow to retrieve last Minecraft Forge and Fabric versions infos.</Description>
+    <Description>Allow to retrieve Forge and Fabric API informations like available versions or download links.</Description>
     <PackageTags>Minecraft, API, Versions, Forge, Fabric, Mod</PackageTags>
     <PackageProjectUrl>https://github.com/JeremTech/McModAPIVersions</PackageProjectUrl>
     <Version>1.1.0</Version>
     <PackageReleaseNotes>1.1.0 :
--</PackageReleaseNotes>
+- Added function to build Forge MDK download link
+- Added function to build Forge Installer download link
+- Updated package informations</PackageReleaseNotes>
+    <PackageLicenseExpression>GPL-3.0 License</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
