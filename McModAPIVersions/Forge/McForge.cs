@@ -149,7 +149,37 @@ namespace McModAPIVersions
             }
             catch (Exception)
             {
-                throw new VersionNotFoundException(string.Format("MDK Download link for forge {0} unreachable.", forgeVersion));
+                throw new VersionNotFoundException(string.Format("MDK download link for forge {0} unreachable.", mcVersion + "-" + forgeVersion));
+            }
+
+            return link;
+        }
+
+        /// <summary>
+        /// Return download link to the targetted Minecraft Forge Installer 
+        /// </summary>
+        /// <param name="mcVersion">Minecraft version</param>
+        /// <param name="forgeVersion">Minecraft Forge version</param>
+        /// <example>To download Minecraft Forge Installer version 35.1.37 for Minecraft 1.16.4, calling the function like this : <code>GetInstallerDownloadLink("1.16.4", "35.1.37");</code></example>
+        /// <returns>Download link to the targetted Minecraft Forge Installer</returns>
+        /// <exception cref="VersionNotFoundException">Thrown when no download link has been found</exception>
+        public static string GetInstallerDownloadLink(string mcVersion, string forgeVersion)
+        {
+            // Build the installer download link 
+            string link = string.Format("https://files.minecraftforge.net/maven/net/minecraftforge/forge/" + mcVersion + "-" + forgeVersion + "/forge-" + mcVersion + "-" + forgeVersion + "-installer.jar");
+
+            // Check if url is a correct download link
+            WebRequest request = WebRequest.Create(new Uri(link));
+            WebResponse response;
+            request.Timeout = 5000;
+
+            try
+            {
+                response = request.GetResponse();
+            }
+            catch (Exception)
+            {
+                throw new VersionNotFoundException(string.Format("Installer download link for forge {0} unreachable.", mcVersion + "-" + forgeVersion));
             }
 
             return link;

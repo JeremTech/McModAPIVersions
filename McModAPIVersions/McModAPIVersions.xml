@@ -223,10 +223,23 @@
         </member>
         <member name="M:McModAPIVersions.McForge.GetMDKDownloadLink(System.String,System.String)">
             <summary>
-            
+            Return download link to the targetted Minecraft Forge MDK 
             </summary>
-            <param name="forgeVersion"></param>
-            <returns></returns>
+            <param name="mcVersion">Minecraft version</param>
+            <param name="forgeVersion">Minecraft Forge version</param>
+            <example>To download Minecraft Forge MDK version 35.1.37 for Minecraft 1.16.4, calling the function like this : <code>GetMDKDownloadLink("1.16.4", "35.1.37");</code></example>
+            <returns>Download link to the targetted Minecraft Forge MDK</returns>
+            <exception cref="T:McModAPIVersions.VersionNotFoundException">Thrown when no download link has been found</exception>
+        </member>
+        <member name="M:McModAPIVersions.McForge.GetInstallerDownloadLink(System.String,System.String)">
+            <summary>
+            Return download link to the targetted Minecraft Forge Installer 
+            </summary>
+            <param name="mcVersion">Minecraft version</param>
+            <param name="forgeVersion">Minecraft Forge version</param>
+            <example>To download Minecraft Forge Installer version 35.1.37 for Minecraft 1.16.4, calling the function like this : <code>GetInstallerDownloadLink("1.16.4", "35.1.37");</code></example>
+            <returns>Download link to the targetted Minecraft Forge Installer</returns>
+            <exception cref="T:McModAPIVersions.VersionNotFoundException">Thrown when no download link has been found</exception>
         </member>
         <member name="M:McModAPIVersions.McForge.RetrieveRemotePromotionsJson">
             <summary>
