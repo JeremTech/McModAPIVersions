@@ -3,6 +3,7 @@ using McModAPIVersions.Fabric;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 
 namespace McModAPIVersionsTests
@@ -25,19 +26,19 @@ namespace McModAPIVersionsTests
         [TestMethod]
         public void VersionExistTest()
         {
-            Assert.IsTrue(McFabric.GetAllSupportedVersions().Contains("21w05b"));
+            Assert.IsTrue(McFabric.GetAllSupportedVersions().Contains("1.17.1"));
         }
 
         [TestMethod]
         public void VersionInfosTest()
         {
-            Assert.IsNotNull(McFabric.GetLastStableLoaderInfos("21w05b"));
+            Assert.IsNotNull(McFabric.GetLastStableLoaderInfos("1.17.1"));
         }
 
         [TestMethod]
         public void VersionInfosErrorTest()
         {
-            Assert.ThrowsException<VersionNotFoundException>(() => McFabric.GetLastStableLoaderInfos("21w08b"));
+            Assert.ThrowsException<VersionNotFoundException>(() => McFabric.GetLastStableLoaderInfos("22w08b"));
         }
     }
 }

@@ -17,22 +17,22 @@ namespace McModAPIVersionsTests
         [TestMethod]
         public void NoLatestVersionFoundTest()
         {
-            // Forge for Minecraft 1.17 has no latest version
-            Assert.ThrowsException<VersionNotFoundException>(() => McForge.GetLatestVersion("1.17"));
+            // Forge for Minecraft 1.18 has no latest version
+            Assert.ThrowsException<VersionNotFoundException>(() => McForge.GetLatestVersion("1.18"));
         }
 
         [TestMethod]
         public void RecommendedVersionFoundTest()
         {
             // Forge for Minecraft 1.16.4 has recommended version
-            Assert.AreEqual<String>("35.1.4", McForge.GetRecommendedVersion("1.16.4"));
+            Assert.AreEqual<String>("36.2.0", McForge.GetRecommendedVersion("1.16.5"));
         }
 
         [TestMethod]
         public void LatestVersionFoundTest()
         {
             // Forge for Minecraft 1.16.5 has latest version
-            Assert.AreEqual<String>("36.0.42", McForge.GetLatestVersion("1.16.5"));
+            Assert.AreEqual<String>("37.0.2", McForge.GetLatestVersion("1.17.1"));
         }
 
         [TestMethod]
@@ -52,8 +52,8 @@ namespace McModAPIVersionsTests
         [TestMethod]
         public void MDKLinkNotFound()
         {
-            // 1.17-31.2.5 version not exist
-            Assert.ThrowsException<VersionNotFoundException>(() => McForge.GetMDKDownloadLink("1.17", "31.2.5"));
+            // 1.18-31.2.5 version not exist
+            Assert.ThrowsException<VersionNotFoundException>(() => McForge.GetMDKDownloadLink("1.18", "31.2.5"));
         }
 
         [TestMethod]
@@ -66,8 +66,8 @@ namespace McModAPIVersionsTests
         [TestMethod]
         public void InstallerLinkNotFound()
         {
-            // 1.17-31.2.5 version not exist
-            Assert.ThrowsException<VersionNotFoundException>(() => McForge.GetInstallerDownloadLink("1.17", "31.2.5"));
+            // 1.18-31.2.5 version not exist
+            Assert.ThrowsException<VersionNotFoundException>(() => McForge.GetInstallerDownloadLink("1.18", "31.2.5"));
         }
 
         [TestMethod]
