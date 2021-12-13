@@ -12,6 +12,20 @@ namespace McModAPIVersions.Forge
     /// </summary>
     public class ForgeVersionsJson
     {
+        #region Minecraft 1.18 - Cave Update - Part Two
+        /// <summary>
+        /// List of Minecraft Forge's versions for Minecraft 1.18.1
+        /// </summary>
+        [JsonProperty("1.18.1")]
+        public List<string> v1181 = null;
+
+        /// <summary>
+        /// List of Minecraft Forge's versions for Minecraft 1.18
+        /// </summary>
+        [JsonProperty("1.18")]
+        public List<string> v118 = null;
+        #endregion
+
         #region Minecraft 1.17 - Cave Update - Part One
         /// <summary>
         /// List of Minecraft Forge's versions for Minecraft 1.17.1

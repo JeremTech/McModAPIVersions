@@ -6,22 +6,21 @@
     <Description>Allow to retrieve Forge and Fabric API informations like available versions or download links.</Description>
     <PackageTags>Minecraft, API, Versions, Forge, Fabric, Mod</PackageTags>
     <PackageProjectUrl>https://github.com/JeremTech/McModAPIVersions</PackageProjectUrl>
-    <Version>1.2.0</Version>
-    <PackageReleaseNotes>1.2.0 :
-- Added Minecraft Forge 1.17.1 support 
-- Updated Newtonsoft.Json to 13.0.1</PackageReleaseNotes>
+    <Version>1.3.0</Version>
+    <PackageReleaseNotes>1.3.0 :
+- Added Minecraft Forge 1.18 and 1.18.1 support </PackageReleaseNotes>
     <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>1.2.0.0</AssemblyVersion>
-    <FileVersion>1.2.0.0</FileVersion>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <FileVersion>1.3.0.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>D:\C#\Libs\McModAPIVersions\McModAPIVersions\McModAPIVersions\McModAPIVersions.xml</DocumentationFile>
+    <DocumentationFile>E:\C#\Libs\McModAPIVersions\McModAPIVersions\McModAPIVersions\McModAPIVersions.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>D:\C#\Libs\McModAPIVersions\McModAPIVersions\McModAPIVersions\McModAPIVersions.xml</DocumentationFile>
+    <DocumentationFile>E:\C#\Libs\McModAPIVersions\McModAPIVersions\McModAPIVersions\McModAPIVersions.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

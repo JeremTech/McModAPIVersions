@@ -26,13 +26,13 @@ namespace McModAPIVersionsTests
         [TestMethod]
         public void VersionExistTest()
         {
-            Assert.IsTrue(McFabric.GetAllSupportedVersions().Contains("1.17.1"));
+            Assert.IsTrue(McFabric.GetAllSupportedVersions().Contains("1.18"));
         }
 
         [TestMethod]
         public void VersionInfosTest()
         {
-            Assert.IsNotNull(McFabric.GetLastStableLoaderInfos("1.17.1"));
+            Assert.IsNotNull(McFabric.GetLastStableLoaderInfos("1.18"));
         }
 
         [TestMethod]
