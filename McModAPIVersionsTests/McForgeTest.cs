@@ -17,8 +17,8 @@ namespace McModAPIVersionsTests
         [TestMethod]
         public void NoLatestVersionFoundTest()
         {
-            // Forge for Minecraft 1.19 has no latest version
-            Assert.ThrowsException<VersionNotFoundException>(() => McForge.GetLatestVersion("1.19"));
+            // Forge for Minecraft 1.35 has no latest version
+            Assert.ThrowsException<VersionNotFoundException>(() => McForge.GetLatestVersion("1.35"));
         }
 
         [TestMethod]
@@ -31,8 +31,8 @@ namespace McModAPIVersionsTests
         [TestMethod]
         public void LatestVersionFoundTest()
         {
-            // Forge for Minecraft 1.18.1 has latest version
-            Assert.AreEqual<String>("39.0.0", McForge.GetLatestVersion("1.18.1"));
+            // Forge for Minecraft 1.18.2 has latest version
+            Assert.IsNotNull(McForge.GetLatestVersion("1.18.2"));
         }
 
         [TestMethod]
