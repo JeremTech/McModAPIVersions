@@ -1,8 +1,9 @@
-﻿using McModAPIVersions;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace McModAPIVersionsTests
+namespace McModAPIVersions.Test
 {
     [TestClass]
     public class McForgeTest
@@ -24,15 +25,15 @@ namespace McModAPIVersionsTests
         [TestMethod]
         public void RecommendedVersionFoundTest()
         {
-            // Forge for Minecraft 1.16.4 has recommended version
-            Assert.AreEqual<String>("36.2.20", McForge.GetRecommendedVersion("1.16.5"));
+            // Forge for Minecraft 1.118.2 has recommended version
+            Assert.IsFalse(string.IsNullOrEmpty(McForge.GetRecommendedVersion("1.18.2")));
         }
 
         [TestMethod]
         public void LatestVersionFoundTest()
         {
-            // Forge for Minecraft 1.18.2 has latest version
-            Assert.IsNotNull(McForge.GetLatestVersion("1.18.2"));
+            // Forge for Minecraft 1.19 has latest version
+            Assert.IsNotNull(McForge.GetLatestVersion("1.19"));
         }
 
         [TestMethod]

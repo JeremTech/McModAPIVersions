@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30907.101
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "McModAPIVersions", "McModAPIVersions\McModAPIVersions.csproj", "{9321543B-AAB6-478A-A43F-D40432532116}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McModAPIVersionsTests", "McModAPIVersionsTests\McModAPIVersionsTests.csproj", "{D32CD067-97E7-408E-B2DE-38AF93C0955E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McModAPIVersions.Test", "McModAPIVersions.Test\McModAPIVersions.Test.csproj", "{61D1C0ED-0560-4CB8-976B-3DB3219E4870}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{9321543B-AAB6-478A-A43F-D40432532116}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9321543B-AAB6-478A-A43F-D40432532116}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9321543B-AAB6-478A-A43F-D40432532116}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D32CD067-97E7-408E-B2DE-38AF93C0955E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D32CD067-97E7-408E-B2DE-38AF93C0955E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D32CD067-97E7-408E-B2DE-38AF93C0955E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D32CD067-97E7-408E-B2DE-38AF93C0955E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61D1C0ED-0560-4CB8-976B-3DB3219E4870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61D1C0ED-0560-4CB8-976B-3DB3219E4870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61D1C0ED-0560-4CB8-976B-3DB3219E4870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61D1C0ED-0560-4CB8-976B-3DB3219E4870}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

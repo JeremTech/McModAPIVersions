@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 
-namespace McModAPIVersionsTests
+namespace McModAPIVersions.Test
 {
     [TestClass]
     public class McFabricTest
@@ -32,7 +32,7 @@ namespace McModAPIVersionsTests
         [TestMethod]
         public void VersionInfosTest()
         {
-            Assert.IsNotNull(McFabric.GetLastStableLoaderInfos("1.18"));
+            Assert.IsNotNull(McFabric.GetLastStableLoaderInfos("1.19"));
         }
 
         [TestMethod]

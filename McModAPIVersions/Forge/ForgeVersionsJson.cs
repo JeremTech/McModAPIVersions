@@ -12,6 +12,14 @@ namespace McModAPIVersions.Forge
     /// </summary>
     public class ForgeVersionsJson
     {
+        #region Minecraft 1.19 - Wild Update
+        /// <summary>
+        /// List of Minecraft Forge's versions for Minecraft 1.19
+        /// </summary>
+        [JsonProperty("1.19")]
+        public List<string> v119 = null;
+        #endregion
+
         #region Minecraft 1.18 - Cave Update - Part Two
         /// <summary>
         /// List of Minecraft Forge's versions for Minecraft 1.18.2
