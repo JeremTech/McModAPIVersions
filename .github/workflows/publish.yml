@@ -35,7 +35,7 @@ jobs:
         dotnet-version: 3.1.419
         source-url: https://nuget.pkg.github.com/jeremtech/index.json
       env:
-          NUGET_AUTH_TOKEN: ${{secrets.NUGET_TOKEN}}
+          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN }}
     - name: Pack
       run: dotnet pack --configuration Release
     - name: Publish the package to GPR
