@@ -32,7 +32,7 @@ namespace McModAPIVersions.Test
         [TestMethod]
         public void VersionInfosTest()
         {
-            Assert.IsNotNull(McFabric.GetLastStableLoaderInfos("1.19"));
+            Assert.IsNotNull(McFabric.GetLastStableLoaderInfos("1.19.2"));
         }
 
         [TestMethod]
