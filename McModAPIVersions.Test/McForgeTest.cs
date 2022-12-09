@@ -25,7 +25,7 @@ namespace McModAPIVersions.Test
         [TestMethod]
         public void RecommendedVersionFoundTest()
         {
-            // Forge for Minecraft 1.118.2 has recommended version
+            // Forge for Minecraft 1.18.2 has recommended version
             Assert.IsFalse(string.IsNullOrEmpty(McForge.GetRecommendedVersion("1.18.2")));
         }
 
@@ -33,7 +33,7 @@ namespace McModAPIVersions.Test
         public void LatestVersionFoundTest()
         {
             // Forge for Minecraft 1.19 has latest version
-            Assert.IsNotNull(McForge.GetLatestVersion("1.19.2"));
+            Assert.IsNotNull(McForge.GetLatestVersion("1.19.3"));
         }
 
         [TestMethod]
