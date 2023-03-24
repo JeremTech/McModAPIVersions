@@ -3,18 +3,19 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>JeremTech</Authors>
-    <Description>Allow to retrieve Forge and Fabric API informations like available versions or download links.</Description>
+    <Description>Provides functions to retrieve last Minecraft Forge and Fabric versions infos.</Description>
     <PackageTags>Minecraft, API, Versions, Forge, Fabric, Mod, Download</PackageTags>
     <PackageProjectUrl>https://github.com/JeremTech/McModAPIVersions</PackageProjectUrl>
-    <Version>1.8.0</Version>
-    <PackageReleaseNotes>1.8.0 :
-- Added Minecraft Forge 1.19.3 support</PackageReleaseNotes>
+    <Version>1.9.0</Version>
+    <PackageReleaseNotes>1.9.0 :
+- Added Minecraft Forge 1.19.4 support</PackageReleaseNotes>
     <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>1.8.0.0</AssemblyVersion>
-    <FileVersion>1.8.0.0</FileVersion>
+    <AssemblyVersion>1.9.0.0</AssemblyVersion>
+    <FileVersion>1.9.0.0</FileVersion>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/JeremTech/McModAPIVersions.git</RepositoryUrl>
+    <PackageReadmeFile></PackageReadmeFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

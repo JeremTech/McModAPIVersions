@@ -15,12 +15,12 @@ namespace McModAPIVersions.Fabric
         /// <summary>
         /// URL to Fabric's supported Minecraft versions JSON
         /// </summary>
-        private static string Json_game_version_url = "https://meta.fabricmc.net/v1/versions/game";
+        private static string Json_game_version_url = "https://meta.fabricmc.net/v2/versions/game";
 
         /// <summary>
         /// Base URL to loader infos JSON
         /// </summary>
-        private static string JsonGameLoaderInfoBaseUrl = "https://meta.fabricmc.net/v1/versions/loader/";
+        private static string JsonGameLoaderInfoBaseUrl = "https://meta.fabricmc.net/v2/versions/loader/";
 
         /// <summary>
         /// Fabric's supported Minecraft versions JSON object
