@@ -33,7 +33,7 @@ namespace McModAPIVersions.Test
         public void LatestVersionFoundTest()
         {
             // Forge for Minecraft 1.19 has latest version
-            Assert.IsNotNull(McForge.GetLatestVersion("1.19.3"));
+            Assert.IsNotNull(McForge.GetLatestVersion("1.19.4"));
         }
 
         [TestMethod]

@@ -101,6 +101,11 @@
             Retrieve Minecraft Forge's version only for Minecraft 1.13 and above.
             </summary>
         </member>
+        <member name="F:McModAPIVersions.Forge.ForgeVersionsJson.v1194">
+            <summary>
+            List of Minecraft Forge's versions for Minecraft 1.19.4
+            </summary>
+        </member>
         <member name="F:McModAPIVersions.Forge.ForgeVersionsJson.v1193">
             <summary>
             List of Minecraft Forge's versions for Minecraft 1.19.3

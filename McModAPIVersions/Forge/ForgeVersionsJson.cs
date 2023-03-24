@@ -14,6 +14,12 @@ namespace McModAPIVersions.Forge
     {
         #region Minecraft 1.19 - Wild Update
         /// <summary>
+        /// List of Minecraft Forge's versions for Minecraft 1.19.4
+        /// </summary>
+        [JsonProperty("1.19.4")]
+        public List<string> v1194 = null;
+
+        /// <summary>
         /// List of Minecraft Forge's versions for Minecraft 1.19.3
         /// </summary>
         [JsonProperty("1.19.3")]
